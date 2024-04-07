@@ -7,9 +7,10 @@ import (
 )
 
 func main() {
-	database.ConectaComBancoDeDados()
+
 	models.Alunos = []models.Aluno{
 		{Nome: "Claudio", CPF: "123123123123", RG: "3293928392839"},
 	}
+	database.ConectaComBancoDeDados()
 	routes.HandleRequests()
 }
